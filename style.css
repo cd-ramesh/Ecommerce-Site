@@ -1,0 +1,931 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4{
+    font-size: 20px;
+    color: #222;
+}
+
+h6{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+p{
+    font-size: 16px;
+    margin: 15px 0 20px 0;
+    font-weight: 400;
+}
+
+/* index.html */
+
+/* Header */
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 80px;
+    background-color:aliceblue;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.05);  
+    position: sticky;
+    top: 0px;
+    z-index: 1; 
+}
+
+.logo{
+    max-height: 50px;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-around;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 25px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #4e4e4e;
+    transition: color 0.3s ease;
+    padding: 3px 0px;
+}
+
+#navbar li a i{
+    color: #4e4e4e;
+    font-size: 17px;
+    transition: color 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: lightgreen;
+    border-bottom: 3px solid lightgreen;
+}
+
+/* Hero Banner */
+
+#hero{
+    background-color: aliceblue;
+    background-image: url("./img/hero.jpg");
+    background-size: auto 110vh;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: 85% 0%;
+    padding: 0px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#hero h4{
+   padding-bottom: 15px; 
+}
+
+#hero h1{
+    color: lightgreen; 
+}
+
+#hero button{
+    background-color: lightyellow;
+    color: lightgreen;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 10px;
+    border: 0px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Products */
+
+#products1{
+    padding: 40px 80px;
+    text-align: center;
+}
+
+#products1 .products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#products1 .product{
+    width: 280px;
+    padding: 10px;
+    border: 2px solid #dedede;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    position: relative;
+    margin: 20px;
+}
+
+#products1 .product:hover{
+    box-shadow: 20px 20px 10px rgba(0,0,0,0.06);
+}
+
+#products1 .product img{
+    width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#products1 .product .des{
+    padding: 10px 0px;
+    text-align: left;
+}
+
+#products1 .product .des span{
+    font-size: 14px;
+    font-weight: 900;
+}
+
+#products1 .product .des h6{
+    font-size: 12px;
+    font-weight: 800;
+    padding: 3px 0px 6px;
+}
+
+#products1 .product .des i{
+    font-size: 12px;
+    color: rgb(243,181,25);
+}
+
+#products1 .product .des h4{
+    font-size: 12px;
+    font-weight: 700;
+    padding-top: 6px;
+}
+
+#products1 .product a i{
+    font-size: 18px;
+    color: lightgreen;
+    background-color: #e8f6ea;
+    padding: 12px 10px 10px;
+    margin: 10px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+/* Banner_1 */
+
+#banner{
+    background-image: linear-gradient(to bottom right,#F2FFDF ,#E2F1FF,#FFE2F1);
+    height: 25vh;
+    padding: 40px 80px;
+    text-align: center;
+}
+
+#banner h3{
+    font-size: 24px;
+    font-weight: 800;
+    padding-bottom: 5px;
+}
+
+#banner h2{
+    font-size: 32px;
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+
+#banner button{
+    background-color: lightyellow;
+    color: lightgreen;
+    font-weight: 900;
+    font-size: 15px;
+    padding: 6px 6px 5px;
+    border: 0px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Banner_2 */
+
+@keyframes slideLeft {
+    from{
+        transform: translateX(400px);
+    }   
+    to{
+        transform: translateX(0px);
+    } 
+}
+
+@keyframes slideRight {
+    from{
+        transform: translateX(-400px);
+    }   
+    to{
+        transform: translateX(0px);
+    } 
+}
+
+#p-banner{
+    padding: 40px 80px 0px;
+    background-image: linear-gradient(to bottom right,#F2FFDF ,#E2F1FF,#FFE2F1);
+    margin-bottom: 40px;
+}
+
+#p-banner .box1{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0px 0px 40px;
+}
+
+#p-banner .box1 .tags{
+    background-image: url("./img/banner/b1.jpg");
+    border-radius: 20px;
+    width: 50%;
+    height: 50vh;
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20px 40px 0px;
+}
+
+#p-banner .box1 .tags h4{
+    font-size: 28px;
+    text-align: center;
+    font-weight: 900;
+    color: white;
+}
+
+#p-banner .box1 .tags button{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    width: 35%;
+    padding: 5px 3px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#p-banner .box1 .tags button:hover{
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
+}
+
+#p-banner .box1 .tags:hover + .des{
+    animation: slideLeft 1s ease-out;
+    display: initial;
+}
+
+#p-banner .box1 .des{
+    font-size: 20px;
+    width: 45%;
+    height: 50vh;
+    font-weight: 400;
+    text-align: center;
+    padding: 80px 0px;
+    display: none;
+}
+
+#p-banner .box1 .des span{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+#p-banner .box2{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 0px 0px 40px;
+}
+
+#p-banner .box2 .tags{
+    background-image: url("./img/banner/b2.jpg");
+    border-radius: 20px;
+    width: 50%;
+    height: 50vh;
+    background-size: cover;
+    padding: 40px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: right;
+    margin: 0px 20px 40px 0px;
+}
+
+#p-banner .box2 .tags h4{
+    font-size: 28px;
+    text-align: center;
+    font-weight: 900;
+    color: #D8A8A8;
+}
+
+#p-banner .box2 .tags button{
+    background-color: transparent;
+    border: 1px solid #D8A8A8;
+    color: #D8A8A8;
+    width: 35%;
+    padding: 5px 3px 3px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#p-banner .box2 .tags button:hover{
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+}
+
+#p-banner .box2 .tags:hover + .des{
+    animation: slideRight 1s ease-out;
+    display: initial;
+}
+
+#p-banner .box2 .des{
+    font-size: 20px;
+    width: 45%;
+    height: 50vh;
+    font-weight: 400;
+    text-align: center;
+    padding: 80px 0px;
+    display: none;
+}
+
+#p-banner .box2 .des span{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+#p-banner .box3{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#p-banner .box3 .tags{
+    background-image: url("./img/banner/b3.jpg");
+    border-radius: 20px;
+    width: 50%;
+    height: 50vh;
+    background-size: cover;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20px 40px 0px;
+}
+
+#p-banner .box3 .tags h4{
+    font-size: 28px;
+    text-align: center;
+    font-weight: 900;
+    color: white;
+}
+
+#p-banner .box3 .tags button{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    width: 30%;
+    padding: 5px 3px 4px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#p-banner .box3 .tags button:hover{
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+}
+
+#p-banner .box3 .tags:hover + .des{
+    animation: slideLeft 1s ease-out;
+    display: initial;
+}
+
+#p-banner .box3 .des{
+    font-size: 20px;
+    width: 45%;
+    height: 50vh;
+    font-weight: 400;
+    text-align: center;
+    padding: 90px 0px;
+    display: none;
+}
+
+#p-banner .box3 .des span{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* Updates */
+
+#updates{
+    padding: 40px 80px;
+    background-image: linear-gradient(to top right,#E2F1FF,#FFE2F1);
+    height: 20vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#updates div{
+    display: flex;
+    justify-content: center;
+} 
+
+#updates div input{
+    padding: 5px 4px 4px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+#updates div button{
+    padding: 7px 4px 4px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: #222;
+    color: white;
+    cursor: pointer;
+}
+
+/* Footer */
+
+#footer{
+    padding: 40px 80px;
+}
+
+#footer .head{
+    text-align: center;
+}
+
+#footer .head a img{
+    max-height: 50px;
+}
+
+#footer .head p{
+    font-size: 14px;
+}
+
+#footer .body{
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer .body div h4{
+    font-size: 13px;
+    font-weight: 900;
+    text-align: center;
+    padding: 1px;
+    border-bottom: 1px solid black;
+    margin-bottom: 4px;
+}
+
+#footer .body div h5{
+    font-size: 12px;
+    font-weight: 400;
+    padding: 6px 0px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#footer .body div h5:hover{
+    color: lightgreen;
+}
+
+#footer .body div{
+    text-align: center;
+}
+
+#footer .body div div i{
+    padding: 15px 5px 20px;
+    cursor: pointer;
+}
+
+#footer .body div div i:hover{
+    color: lightgreen;
+}
+
+#footer .body div img{
+    display: block;
+    border: 1px solid black;
+    margin: 10px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* shop.html */
+
+/* Shop Banner */
+
+
+#shop-banner{
+    background-image: linear-gradient(to bottom right,#F2FFDF ,#E2F1FF,#FFE2F1);
+    height: 25vh;
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+#products1 .more-products{
+    background-color: #222;
+    width: 16%;
+    margin-left: 42%;
+    border-radius: 5px;
+}
+
+#products1 .more-products:hover{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.4); 
+    cursor: pointer;
+}
+
+#products1 .more-products h4{
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 10px 3px 8px;
+    color: white;
+}
+
+
+/* product.html */
+
+/* Single Product */
+
+#product{
+    display: flex;
+    justify-content: space-around;
+}
+
+#product #pro-images{
+    height: 100vh;
+    width: 40%;
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#product #pro-images .main{
+    height: 70%;
+    margin-bottom: 10px;
+}
+
+#product #pro-images .subs{
+    display: flex;
+    justify-content: space-between;
+}
+
+#product #pro-images .main img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+#product #pro-images .subs img{
+    width: 23%;
+    height: 100%;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+#product #details{
+    width: 50%;
+    padding: 25vh 0px 20vh;
+}
+
+#product #details h4{
+    font-weight: 900;
+}
+
+#product #details h5{
+    font-size: 15px;
+    font-weight: 900;
+    padding-bottom: 15px;
+}
+
+#product #details p{
+    font-weight: 400;
+    padding: 10px 0px 0px;
+}
+
+#product #details label{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#product #details #size{
+    background-color: #222;
+    color: white;
+    padding: 4px 2px 2px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    border: 0px;
+}
+
+#product #details input{
+    width: 45px;
+    background-color: #222;
+    color: white;
+    padding: 3px;
+    border: 0px;
+    margin-left: 5px;
+    margin-bottom: 25px;
+}
+
+#product #details button{
+    background-color: lightgreen;
+    border: 0px;
+    padding: 5px;
+    color: white;
+    font-size: 15px;
+    margin-left: 50px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#product #details button:hover{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);  ;
+}
+
+
+/* about.html */
+
+/* About Banner */
+
+
+#about-banner{
+    background-image: linear-gradient(to bottom right,#F2FFDF ,#E2F1FF,#FFE2F1);
+    height: 25vh;
+    padding: 70px 80px 40px;
+    text-align: center;
+}
+
+/* Timeline */
+
+#timeline{
+    padding: 60px 80px 40px;
+    height: 70vh;
+}
+
+#timeline div h3{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+#timeline div div{
+    display: flex;
+    justify-content: space-around;
+}
+
+#timeline div div .odd{
+    position: relative;
+    top: -6px;
+}
+
+#timeline div div .even{
+    position: relative;
+    top: 32px;
+}
+
+#timeline div hr{
+    width: 80%;
+    height: 4px;
+    background-color: #222;
+    margin-left: 10%;
+}
+
+#timeline div div button{
+    height: 16px;
+    width: 16px;
+    position: relative;
+    top: -11px;
+    border-radius: 50%;
+    border: 0px;
+    background-color: #222;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#timeline div div .btn1{
+    background-color: lightgreen;
+}
+
+#timeline div div button:hover{
+    background-color: lightgreen;
+}
+
+#timeline .des{
+    padding: 60px 20% 60px;
+    text-align: center;
+}
+
+#timeline .des h4{
+    font-weight: 900;
+}
+
+#timeline .des p{
+    line-height: 24px;
+}
+
+
+/* contact.html */
+
+/* Contact Banner */
+
+
+#contact-banner{
+    background-image: linear-gradient(to bottom right,#F2FFDF ,#E2F1FF,#FFE2F1);
+    height: 25vh;
+    padding: 70px 80px 40px;
+    text-align: center;
+}
+
+/* Feedback form */
+
+#message{
+    padding: 40px 20%;
+}
+
+#message .form h3{
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+#message .form h4{
+    padding-bottom: 20px;
+}
+
+#message .form form .name, .mail-id, .subject{
+    width: 80%;
+    height: 30px;
+    padding: 5px 5px 4px;
+    border: 1px solid #4e4e4e;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#message .form form textarea{
+    width: 80%;
+    height: 150px;
+    padding: 5px 5px 4px;
+    border: 1px solid #4e4e4e;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#message .form form .submit{
+    display: block;
+    width: 10%;
+    padding: 5px 3px 3px;
+    border-radius: 5px;
+    background-color: #222;
+    color: white;
+    border: 0px;
+    cursor: pointer;
+}
+
+
+/* cart.html */
+
+/* Cart Banner */
+
+
+#cart-banner{
+    background-image: linear-gradient(to bottom right,#F2FFDF ,#E2F1FF,#FFE2F1);
+    height: 25vh;
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;   
+}
+
+/* Cart */
+
+#cart{
+    padding: 40px 20%;
+}
+
+#cart table img{
+    width: 70px;
+}
+
+#cart table thead td{
+    padding-bottom: 15px;
+    font-weight: 900;
+}
+
+#cart table td:nth-child(1){
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(2){
+    width: 250px;
+    text-align: center;
+}
+
+#cart table td:nth-child(3),
+#cart table td:nth-child(4),
+#cart table td:nth-child(5){
+    width: 150px;
+    text-align: center;
+}
+
+#cart table thead:nth-child(6){
+    width: 100px;
+    text-align: center;
+}
+
+#cart table tbody td:nth-child(4) input{
+    width: 50px;
+    padding: 5px 3px 4px;
+    background-color: #222;
+    color: white;
+    border: 0px;
+}
+
+#cart table tbody td:nth-child(6) i{
+    margin-left: 40%;
+}
+
+#cart table tbody td{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Checkout */
+
+#checkout{
+    padding: 40px 0px 40px 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#checkout table{
+    border-collapse: collapse;
+    width: 35%;
+}
+
+#checkout h3{
+    padding-bottom: 15px;
+}
+
+#checkout input{
+    width: 200px;
+    padding: 5px 3px 4px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+#checkout button{
+    padding: 5px 4px 4px;
+    background-color: #222;
+    color: white;
+    border: 0px;
+    cursor: pointer;
+}
+
+#checkout table td{
+    border: 1px solid #222;
+    padding: 4px 3px;
+    font-size: 14px;
+}
+
+#checkout table + button{
+    margin-top: 10px;
+}
+

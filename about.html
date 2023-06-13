@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6ddd5432cd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <section id="header">
+      <img src="./img/logo.png" class="logo" />
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a class="active" href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="cart.html">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about-banner">
+      <h2>Get to Know Us</h2>
+    </section>
+
+    <section id="timeline">
+      <div>
+        <h3>Our Story</h3>
+        <div>
+          <span class="odd">2005</span>
+          <span class="even">2008</span>
+          <span class="odd">2012</span>
+          <span class="even">2016</span>
+          <span class="odd">2020</span>
+        </div>
+        <hr />
+        <div>
+          <button class="btn1"></button>
+          <button class="btn2"></button>
+          <button class="btn3"></button>
+          <button class="btn4"></button>
+          <button class="btn5"></button>
+        </div>
+      </div>
+      <div class="des">
+        <h4>2005: Company Foundation</h4>
+        <p>
+          In 2005, a group of visionary individuals with diverse backgrounds and
+          expertise came together to form the brand. Fueled by a collective
+          passion for innovation, they aimed to challenge the status quo and
+          redefine the fashion industry by infusing creativity, authenticity,
+          and a customer-centric approach into every aspect of their brand.
+        </p>
+      </div>
+    </section>
+
+    <hr />
+
+    <footer id="footer">
+      <div class="head">
+        <a href="#"><img src="./img/logo.png" /></a>
+        <p>
+          At Sale, we believe that great style doesn't have to come with a hefty
+          price tag. We are passionate about offering high-quality products at
+          unbeatable prices, making fashion accessible to everyone. With a wide
+          range of trendy and timeless pieces, we strive to empower individuals
+          to express their unique style without breaking the bank. From clothing
+          and accessories to footwear and more, Sale is your go-to destination
+          for incredible deals and fashionable finds. Shop with us and discover
+          the joy of scoring amazing discounts without compromising on style.
+        </p>
+      </div>
+      <div class="body">
+        <div>
+          <h4>SHOP</h4>
+          <h5>Ladies</h5>
+          <h5>Men</h5>
+          <h5>Divided</h5>
+          <h5>Baby</h5>
+          <h5>Kids</h5>
+        </div>
+        <div>
+          <h4>SUPPORT</h4>
+          <h5>Help</h5>
+          <h5>Customer Services</h5>
+          <h5>Returns and Exchanges</h5>
+          <h5>Shipping</h5>
+          <h5>Order Tracker</h5>
+          <h5>Store Locator</h5>
+          <h5>Privacy Policy</h5>
+          <h5>Terms & Conditions</h5>
+        </div>
+        <div>
+          <h4>COMPANY INFO</h4>
+          <h5>About Us</h5>
+          <h5>Careers</h5>
+          <h5>Investors</h5>
+          <h5>Press</h5>
+        </div>
+        <div>
+          <h4>FOLLOW US</h4>
+          <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-pinterest"></i>
+          </div>
+          <h4>INSTALL APP</h4>
+          <img src="./img/install/app.jpg" />
+          <img src="./img/install/play.jpg" />
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      var des_h = document.querySelector(".des h4");
+      var des_p = document.querySelector(".des p");
+      var btn1 = document.querySelector(".btn1");
+      var btn2 = document.querySelector(".btn2");
+      var btn3 = document.querySelector(".btn3");
+      var btn4 = document.querySelector(".btn4");
+      var btn5 = document.querySelector(".btn5");
+
+      btn1.addEventListener("click", () => {
+        des_h.textContent = "2005: Company Foundation";
+        des_p.textContent =
+          "In 2005, a group of visionary individuals with diverse backgrounds and expertise came together to form the brand. Fueled by a collective passion for innovation, they aimed to challenge the status quo and redefine the fashion industry by infusing creativity, authenticity, and a customer-centric approach into every aspect of their brand.";
+        btn1.setAttribute("style", "background-color: lightgreen");
+        btn2.setAttribute("style", "background-color: #222");
+        btn3.setAttribute("style", "background-color: #222");
+        btn4.setAttribute("style", "background-color: #222");
+        btn5.setAttribute("style", "background-color: #222");
+      });
+
+      btn2.addEventListener("click", () => {
+        des_h.textContent = "2008: Product Expansion";
+        des_p.textContent =
+          "In 2008, the brand embarked on an exciting journey of product expansion, introducing a wide range of accessories that reflected their commitment to delivering a complete fashion experience. From statement jewelry pieces to stylish handbags and trendy footwear, their expanded product line showcased a perfect blend of quality craftsmanship, contemporary designs, and affordability, resonating with fashion-conscious individuals seeking versatility and self-expression.";
+        btn1.setAttribute("style", "background-color: #222");
+        btn2.setAttribute("style", "background-color: lightgreen");
+        btn3.setAttribute("style", "background-color: #222");
+        btn4.setAttribute("style", "background-color: #222");
+        btn5.setAttribute("style", "background-color: #222");
+      });
+
+      btn3.addEventListener("click", () => {
+        des_h.textContent = "2012: International Expansion";
+        des_p.textContent =
+          "The year 2012 marked a significant milestone as the brand ventured into international markets, fueled by their unwavering dedication to delivering exceptional fashion experiences worldwide. Through strategic partnerships and a deep understanding of diverse cultures and preferences, they successfully localized their brand, adapting their offerings to cater to the unique tastes and trends of each market they entered. This expansion solidified their position as a global fashion powerhouse, connecting with fashion enthusiasts from different corners of the world.";
+        btn1.setAttribute("style", "background-color: #222");
+        btn2.setAttribute("style", "background-color: #222");
+        btn3.setAttribute("style", "background-color: lightgreen");
+        btn4.setAttribute("style", "background-color: #222");
+        btn5.setAttribute("style", "background-color: #222");
+      });
+
+      btn4.addEventListener("click", () => {
+        des_h.textContent = "2016: Sustainability Initiative";
+        des_p.textContent =
+          "In 2016, the brand embarked on a transformative sustainability initiative, recognizing their responsibility to the environment and the communities they serve. With a strong focus on ethical practices, they implemented sustainable manufacturing processes, utilized eco-friendly materials, and actively engaged in initiatives to minimize waste and reduce their ecological footprint. By integrating sustainability into their core values, they aimed to inspire positive change within the fashion industry and make a lasting impact on the planet.";
+        btn1.setAttribute("style", "background-color: #222");
+        btn2.setAttribute("style", "background-color: #222");
+        btn3.setAttribute("style", "background-color: #222");
+        btn4.setAttribute("style", "background-color: lightgreen");
+        btn5.setAttribute("style", "background-color: #222");
+      });
+
+      btn5.addEventListener("click", () => {
+        des_h.textContent = "2020: Digital Transformation";
+        des_p.textContent =
+          "In the fast-paced digital era, the brand underwent a significant digital transformation in 2020 to meet the evolving needs and preferences of their tech-savvy customers. They harnessed the power of technology to create an immersive online shopping experience, leveraging cutting-edge e-commerce platforms, intuitive user interfaces, and personalized recommendations to make each customer's journey seamless and engaging. Additionally, their robust social media presence allowed them to connect directly with their audience, fostering genuine interactions and building a community of loyal brand advocates.";
+        btn1.setAttribute("style", "background-color: #222");
+        btn2.setAttribute("style", "background-color: #222");
+        btn3.setAttribute("style", "background-color: #222");
+        btn4.setAttribute("style", "background-color: #222");
+        btn5.setAttribute("style", "background-color: lightgreen");
+      });
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

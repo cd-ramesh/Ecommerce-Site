@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6ddd5432cd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <section id="header">
+      <img src="./img/logo.png" class="logo" />
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a class="active" href="cart.html">
+              <i class="fa-solid fa-cart-shopping" style="color: lightgreen">
+              </i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="cart-banner">
+      <h2>Your Cart</h2>
+    </section>
+
+    <section id="cart">
+      <table>
+        <thead>
+          <tr>
+            <td>IMAGE</td>
+            <td>PRODUCT</td>
+            <td>PRICE</td>
+            <td>QUANTITY</td>
+            <td>SUBTOTAL</td>
+            <td>REMOVE</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="./img/products/p1.jpg" /></td>
+            <td>Relaxed Fit Patterned resort shirt</td>
+            <td>1,299.00</td>
+            <td><input type="number" value="0" /></td>
+            <td>0.00</td>
+            <td>
+              <a href="#"><i class="fa-solid fa-xmark"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="./img/products/p2.jpg" /></td>
+            <td>Relaxed Fit Linen resort shirt</td>
+            <td>2,299.00</td>
+            <td><input type="number" value="0" /></td>
+            <td>0.00</td>
+            <td>
+              <a href="#"><i class="fa-solid fa-xmark"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="./img/products/p3.jpg" /></td>
+            <td>Oversized Fit Patterned resort shirt</td>
+            <td>1,499.00</td>
+            <td><input type="number" value="0" /></td>
+            <td>0.00</td>
+            <td>
+              <a href="#"><i class="fa-solid fa-xmark"></i></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="checkout">
+      <div>
+        <h3>Apply Coupon</h3>
+        <input type="text" placeholder="Enter Your Coupon" />
+        <button>Apply</button>
+      </div>
+      <div>
+        <h3>Checkout</h3>
+        <table>
+          <tr>
+            <td>Cart Total</td>
+            <td>0.00</td>
+          </tr>
+          <tr>
+            <td>Delivery Charges</td>
+            <td>0.00</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>0.00</td>
+          </tr>
+        </table>
+        <button>Proceed to Pay</button>
+      </div>
+    </section>
+
+    <hr />
+
+    <footer id="footer">
+      <div class="head">
+        <a href="#"><img src="./img/logo.png" /></a>
+        <p>
+          At Sale, we believe that great style doesn't have to come with a hefty
+          price tag. We are passionate about offering high-quality products at
+          unbeatable prices, making fashion accessible to everyone. With a wide
+          range of trendy and timeless pieces, we strive to empower individuals
+          to express their unique style without breaking the bank. From clothing
+          and accessories to footwear and more, Sale is your go-to destination
+          for incredible deals and fashionable finds. Shop with us and discover
+          the joy of scoring amazing discounts without compromising on style.
+        </p>
+      </div>
+      <div class="body">
+        <div>
+          <h4>SHOP</h4>
+          <h5>Ladies</h5>
+          <h5>Men</h5>
+          <h5>Divided</h5>
+          <h5>Baby</h5>
+          <h5>Kids</h5>
+        </div>
+        <div>
+          <h4>SUPPORT</h4>
+          <h5>Help</h5>
+          <h5>Customer Services</h5>
+          <h5>Returns and Exchanges</h5>
+          <h5>Shipping</h5>
+          <h5>Order Tracker</h5>
+          <h5>Store Locator</h5>
+          <h5>Privacy Policy</h5>
+          <h5>Terms & Conditions</h5>
+        </div>
+        <div>
+          <h4>COMPANY INFO</h4>
+          <h5>About Us</h5>
+          <h5>Careers</h5>
+          <h5>Investors</h5>
+          <h5>Press</h5>
+        </div>
+        <div>
+          <h4>FOLLOW US</h4>
+          <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-pinterest"></i>
+          </div>
+          <h4>INSTALL APP</h4>
+          <img src="./img/install/app.jpg" />
+          <img src="./img/install/play.jpg" />
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

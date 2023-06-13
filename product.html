@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6ddd5432cd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <section id="header">
+      <img src="./img/logo.png" class="logo" />
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="cart.html">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="product">
+      <div id="pro-images">
+        <div class="main">
+          <img src="./img/products/p1.jpg" />
+        </div>
+        <div class="subs">
+          <img src="./img/products/p1.jpg" />
+          <img src="./img/products/p2.jpg" />
+          <img src="./img/products/p3.jpg" />
+          <img src="./img/products/p4.jpg" />
+        </div>
+      </div>
+      <div id="details">
+        <h4>Relaxed Fit Patterned resort shirt</h4>
+        <p>
+          Elevate your vacation style with our Relaxed Fit Patterned Resort
+          Shirt. Made from premium, breathable fabric, it offers exceptional
+          comfort while showcasing captivating patterns inspired by tropical
+          paradise. With its versatile design and impeccable craftsmanship, this
+          shirt is a must-have addition to your travel essentials, promising
+          both style and relaxation wherever your adventures take you.
+        </p>
+        <h5>Rs.1,299.00</h5>
+        <label for="size">Select Size: </label>
+        <select id="size">
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XLL">XXL</option>
+        </select>
+        <br />
+        <label for="qty">Quantity: </label>
+        <input type="number" value="1" />
+        <br />
+        <button>Add to Cart</button>
+      </div>
+    </section>
+
+    <section id="updates">
+      <h4>
+        Be the first to know about our newest arrivals, latest trends, and
+        exclusive deals
+      </h4>
+      <div>
+        <input type="email" placeholder="Your email address" />
+        <button>SUBSCRIBE</button>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="head">
+        <a href="#"><img src="./img/logo.png" /></a>
+        <p>
+          At Sale, we believe that great style doesn't have to come with a hefty
+          price tag. We are passionate about offering high-quality products at
+          unbeatable prices, making fashion accessible to everyone. With a wide
+          range of trendy and timeless pieces, we strive to empower individuals
+          to express their unique style without breaking the bank. From clothing
+          and accessories to footwear and more, Sale is your go-to destination
+          for incredible deals and fashionable finds. Shop with us and discover
+          the joy of scoring amazing discounts without compromising on style.
+        </p>
+      </div>
+      <div class="body">
+        <div>
+          <h4>SHOP</h4>
+          <h5>Ladies</h5>
+          <h5>Men</h5>
+          <h5>Divided</h5>
+          <h5>Baby</h5>
+          <h5>Kids</h5>
+        </div>
+        <div>
+          <h4>SUPPORT</h4>
+          <h5>Help</h5>
+          <h5>Customer Services</h5>
+          <h5>Returns and Exchanges</h5>
+          <h5>Shipping</h5>
+          <h5>Order Tracker</h5>
+          <h5>Store Locator</h5>
+          <h5>Privacy Policy</h5>
+          <h5>Terms & Conditions</h5>
+        </div>
+        <div>
+          <h4>COMPANY INFO</h4>
+          <h5>About Us</h5>
+          <h5>Careers</h5>
+          <h5>Investors</h5>
+          <h5>Press</h5>
+        </div>
+        <div>
+          <h4>FOLLOW US</h4>
+          <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-pinterest"></i>
+          </div>
+          <h4>INSTALL APP</h4>
+          <img src="./img/install/app.jpg" />
+          <img src="./img/install/play.jpg" />
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      var mainImg = document.querySelector(".main img");
+      var subImgs = document.querySelectorAll(".subs img");
+
+      subImgs.forEach((subImg) => {
+        subImg.addEventListener("click", () => {
+          mainImg.src = subImg.src;
+        });
+      });
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
